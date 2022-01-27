@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>ERA | Iniciar Sesión</title>
+</head>
+<body class="animate__animated animate__fadeIn" style="background-image: url('assets/bgs/Login.png');">
+    <div class="flex justify-center" style="height: 100%;">
+        <div class="login-box flex flex-col items-center justify-center px-16">
+            <img src="assets/ui/loader.gif" id="loader" class="animate__animated animate__fadeIn" alt="Loading" style="position: absolute; display: none;" width="20%"/>
+            <img src="assets/ui/logo.svg" alt="Era Real Estate Paraguay" class="logo mb-6"/>
+            <p class="faded caption color-B pb-6">¡Bienvenido/a! Si esta es tu primera vez, ingresá  con tu cédula (sin puntos ni guiones), tanto en el usuario como en la contraseña. </p>
+            <input class="faded input" type="text" placeholder="CI">
+            <input class="faded input mt-4" type="password" placeholder="CONTRASEÑA">
+            <div class="faded field is-grouped pt-6" style="cursor: pointer;">
+                <div class="button flex pt-5" onclick="changepage()" id="b1" style="background-color: #0b3279; color:white">
+                <p class="pr-2" >INICIAR SESIÓN</p>
+                <img src="assets/ui/chevron-left.svg" alt="Siguiente"/>
+                </div>
+            </div>
+            <div class="faded button flex color-B" id="b2" style="border: none;">
+                <p style="font-weight: 600;">OLVIDE MI CONTRASEÑA</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changepage() {
+            let button1 = document.getElementsByClassName("faded")
+
+            for (i=0; i<button1.length ; i++) {
+                button1[i].classList.add("animate__animated")
+                button1[i].classList.add("animate__fadeOut")
+            }
+            let loader = document.getElementById("loader")
+            loader.style.display = "block"
+            location.href = "index.html"
+        }
+
+        function wait(ms){
+            var start = new Date().getTime();
+            var end = start;
+            while(end < start + ms) {
+                end = new Date().getTime();
+            }
+        }
+    </script>   
+</body>
+</html>

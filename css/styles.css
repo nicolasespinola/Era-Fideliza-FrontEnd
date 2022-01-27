@@ -1,0 +1,226 @@
+@import url(https://allfont.es/allfont.css?fonts=raleway-bold);
+
+/* || GENERAL STYLES */
+
+* {
+    font-family: 'Raleway' !important;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+input {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px !important;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+}
+
+/* || Typography */
+
+.caption {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.little-letters {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.header-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 82px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.body-reg {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.input::placeholder {
+    color: #0b32798f;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: 400ms;
+}
+
+.nav-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: 300ms;
+    border-style: solid;
+    border-top: 1px;
+    border-left: 0px;
+    border-right: 1px;
+    border-color: white;
+}
+
+.nav-text:hover {
+    color: #920237;
+    transition: 200ms;
+    border-style: solid;
+    border-top: 1px;
+    border-left: 0px;
+    border-right: 1px;
+    border-color: #920237;
+}
+
+.T1 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+}
+
+/* || Text Colors*/
+
+.color-B {
+    color: #0b3279;
+}
+
+.color-R {
+    color: #c8102e;
+}
+
+.color-LB {
+    color: #6ab2df;
+}
+
+.color-G {
+    color: #f6f6f6;
+}
+
+.color-O {
+    color: #e9933e;
+}
+
+.color-R2 {
+    color: #920237;
+}
+
+.color-N {
+    color: #141414;
+}
+/* || Utilities */
+
+.login-box {
+    background-color: white;
+    height: 550px;
+    width: 440px;
+    align-self: center;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+.home-header {
+    height: 650px;
+    width: 100vw;
+    padding-left: 13vw;
+}
+
+/* || Common components */
+
+.navbar {
+    width: 100vw;
+}
+.nav-1 {
+    width: 100%;
+}
+
+.nav-2 {
+    width: 50%;
+}
+
+.fav-section {
+    width: 100vw;
+}
+
+.input {
+    border: none;
+    box-shadow: none;
+    border-style: solid;
+    border-radius: 0;
+    border-top: 0.5px;
+    border-left: 0.5px;
+    border-right: 0.5px;
+    border-color: #0b3279;
+    width: 100%;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    transition: 500ms;
+    color: #0b3279;
+}
+
+.nav-text {
+    cursor: pointer;
+}
+
+.input:active,
+.input:focus {
+    border-color: #0b3279;
+    box-shadow: none !important;
+    transition: 1s;
+    outline: none !important;
+}
+
+.input:hover {
+    border-color: #0b3279 !important;
+}
+
+.button {
+    font-family: 'Raleway' !important;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 0;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 22px 29px;
+}
+
+/* || Animations */

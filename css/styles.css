@@ -23,6 +23,13 @@ input {
     letter-spacing: 0.05em;
 }
 
+footer {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    background-color: #f6f6f6;
+    color: #7b7b7b;
+}
+
 /* || Typography */
 
 .caption {
@@ -30,7 +37,6 @@ input {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 25px;
 }
 
 .little-letters {
@@ -54,7 +60,15 @@ input {
 .body-reg {
     font-family: Raleway;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.body-bold {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 33px;
 }
@@ -74,7 +88,7 @@ input {
 .nav-text {
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.05em;
@@ -100,10 +114,18 @@ input {
 .T1 {
     font-family: Raleway;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 45px;
     line-height: 53px;
-    text-align: center;
+}
+
+.overline {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    text-decoration: none !important;
 }
 
 /* || Text Colors*/
@@ -135,6 +157,7 @@ input {
 .color-N {
     color: #141414;
 }
+
 /* || Utilities */
 
 .login-box {
@@ -156,8 +179,6 @@ input {
     padding-left: 13vw;
 }
 
-/* || Common components */
-
 .navbar {
     width: 100vw;
 }
@@ -171,6 +192,8 @@ input {
 
 .fav-section {
     width: 100vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .input {
@@ -221,6 +244,26 @@ input {
     justify-content: space-evenly;
     align-items: center;
     padding: 22px 29px;
+    cursor: pointer;
+}
+
+.button-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 42px;
+    width: 110px;
+}
+
+.footer-social {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* || Animations */
+
+.disfruta {
+    width: 100%;
+    opacity: 0;
+}

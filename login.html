@@ -14,10 +14,9 @@
 
     <title>ERA | Iniciar Sesión</title>
 </head>
-<body class="animate__animated animate__fadeIn" style="background-image: url('assets/bgs/Login.png');">
-    <div class="flex justify-center" style="height: 100%;">
+<body class="animate__animated animate__fadeIn" style="background-image: url('assets/bgs/Login.jpg');">
+    <div class="flex justify-center " style="height: 100%;">
         <div class="login-box flex flex-col items-center justify-center px-16">
-            <img src="assets/ui/loader.gif" id="loader" class="animate__animated animate__fadeIn" alt="Loading" style="position: absolute; display: none;" width="20%"/>
             <img src="assets/ui/logo.svg" alt="Era Real Estate Paraguay" class="logo mb-6"/>
             <p class="faded caption color-B pb-6">¡Bienvenido/a! Si esta es tu primera vez, ingresá  con tu cédula (sin puntos ni guiones), tanto en el usuario como en la contraseña. </p>
             <input class="faded input" type="text" placeholder="CI">
@@ -41,9 +40,8 @@
                 button1[i].classList.add("animate__animated")
                 button1[i].classList.add("animate__fadeOut")
             }
-            let loader = document.getElementById("loader")
-            loader.style.display = "block"
             location.href = "index.html"
+            
         }
 
         function wait(ms){

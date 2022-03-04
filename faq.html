@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FAQ</title>
+</head>
+<style>
+
+.question {
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+  border-style: solid;
+  border-bottom: 2px;
+  border-color: slategray;
+}
+.answers {
+  padding: 0px 15px;
+  margin: 5px 0;
+  width:100%!important;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+  
+}
+
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 120%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+
+
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.questions {
+  display: none;
+  
+}
+
+</style>
+<body>
+    <div class="navbar flex flex-col items-center shadow-sm" style="filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.06));">
+        <div class="nav-1 flex justify-around pb-5">
+            <div class="flex" style="width: 11vw;">
+                <img class="mr-3" src="assets/ui/logo-facebook.svg" alt="logo-facebook" width="24px">
+                <img src="assets/ui/logo-instagram.svg" alt="instagram" width="24px">
+            </div>
+            <img src="assets/ui/logo.svg" style="align-self: center;" width="58px">
+            <div class="flex " style="width: 11vw;">
+                <div class="flex flex-col items-flex-end justify-center pr-2">
+                    <p class="caption" style="line-height: 0;">Jose Amarilla</p>
+                    <p class="little-letters color-R2 mt-4" style="line-height: 0;">Cerrar Sesión</p>
+                </div>
+                <img src="assets/ui/user-logo.svg" width="48px">
+            </div>
+        </div>
+        <div class="nav-2 flex justify-evenly mb-3">
+            <a class="nav-text color-B" style="font-weight: bolder;">¿Qué es Era Fideliza?</a>
+            <a class="nav-text color-B">Descuentos</a>
+            <a class="nav-text color-B">Preguntas frecuentes</a>
+            <a class="nav-text color-B">Contacto</a>
+        </div>
+    </div>
+
+    <div class="flex flex-col pt-32" style="padding-left: 8vw; padding-right: 8vw; z-index: 1; height: 100vh;" >
+      <h2 class="T1 color-B pb-6">Preguntas frecuentes</h2> 
+      <div class="content">
+      <div>
+        <input type="checkbox" id="question1" name="q"  class="questions">
+        <div class="plus color-R" style="align-self: center;">+</div>
+        <label for="question1" class="question" style="font-weight: bold;border-style: solid; border-bottom: 2px; border-color: darkgrey;">
+            ¿Qué es Fideliza?
+        </label>
+        <div class="answers">
+            ERA Fideliza es un programa que reafirma nuestro compromiso con nuestros clientes y asesores, gracias a un mundo de descuentos en distintos rubros como electrodomésticos, cuidado personal, educación, gastronomía y mucho más.</div>
+      </div>
+      <div>
+        <input type="checkbox" id="question2" name="q"  class="questions">
+        <div class="plus color-R" style="align-self: center;">+</div>
+        <label for="question2" class="question" style="font-weight: bold;border-style: solid; border-bottom: 2px; border-color: darkgrey;">
+            ¿Cuáles son los beneficios de ser socio?
+        </label>
+        <div class="answers">
+            ERA Fideliza es un programa que reafirma nuestro compromiso con nuestros clientes y asesores, gracias a un mundo de descuentos en distintos rubros como electrodomésticos, cuidado personal, educación, gastronomía y mucho más.</div>
+      </div>
+      <div>
+        <input type="checkbox" id="question3" name="q"  class="questions">
+        <div class="plus color-R" style="align-self: center;">+</div>
+        <label for="question3" class="question" style="font-weight: bold;border-style: solid; border-bottom: 2px; border-color: darkgrey;">
+            ¿Cuáles son los requisitos para acceder a los beneficios?
+        </label>
+        <div class="answers">
+            ERA Fideliza es un programa que reafirma nuestro compromiso con nuestros clientes y asesores, gracias a un mundo de descuentos en distintos rubros como electrodomésticos, cuidado personal, educación, gastronomía y mucho más.</div>
+        </div>
+        </div>
+    </div>
+      <footer class="flex justify-between items-center" style="height: 120px; z-index: 10;">
+        <p class="nav-text">Tel: (021) 614-412 | Email: atencion@era.com</p>
+        <div class="flex justify-evenly">
+            <img class="footer-social" src="assets/ui/logo-facebook-g.svg" alt="logo-facebook"/>
+            <img class="footer-social" src="assets/ui/logo-instagram-g.svg" alt="logo-ig"/>
+            <img class="footer-social" src="assets/ui/uil_whatsapp-g.svg" alt="uil_whatsapp-g"/>
+            <img class="footer-social" src="assets/ui/linkedin-g.svg" alt="linkedin-g"/>
+            <img class="footer-social" src="assets/ui/yt-g.svg" alt="yt-g"/>
+        </div>
+        <p class="nav-text">Términos y condiciones</p>
+        <p class="nav-text">era fideliza 2022 | desarrollado por girolabs</p>
+    </footer>
+</body>
+</html>

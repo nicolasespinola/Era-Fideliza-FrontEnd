@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>ERA | Iniciar Sesión</title>
+</head>
+<body>
+    <div class="navbar flex flex-col items-center shadow-sm" style="filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.06));">
+        <div class="nav-1 flex justify-around pb-5">
+            <div class="flex" style="width: 11vw;">
+                <img class="mr-3" src="assets/ui/logo-facebook.svg" alt="logo-facebook" width="24px">
+                <img src="assets/ui/logo-instagram.svg" alt="instagram" width="24px">
+            </div>
+            <img src="assets/ui/logo.svg" style="align-self: center;" width="58px">
+            <div class="flex " style="width: 11vw;">
+                <div class="flex flex-col items-flex-end justify-center pr-2">
+                    <p class="caption" style="line-height: 0;">Jose Amarilla</p>
+                    <p class="little-letters color-R2 mt-4" style="line-height: 0;">Cerrar Sesión</p>
+                </div>
+                <img src="assets/ui/user-logo.svg" width="48px">
+            </div>
+        </div>
+        <div class="nav-2 flex justify-evenly mb-3">
+            <a class="nav-text color-B" style="font-weight: bolder;">¿Qué es Era Fideliza?</a>
+            <a class="nav-text color-B">Descuentos</a>
+            <a class="nav-text color-B">Preguntas frecuentes</a>
+            <a class="nav-text color-B">Contacto</a>
+        </div>
+    </div>
+    <div class="flex animate__animated animate__fadeIn" style="width: 100vw; height: 550px; padding-left: 13vw;background-size:cover; align-items: center;">
+        <div>
+            <h1 class="T1 animate__delay-1s color-B pb-3" >Mi Perfil</h1>
+            <p>Mi usuario: 5789486</p>
+            <div class="field is-grouped animate__animated animate__fadeInUp animate__delay-1s pt-3">
+                <div class="button field flex shadow-sm" style="background-color: #E7E7E7; border-style: none; color:rgb(0, 0, 0); width: 183px;">
+                    <p class="pr-2">Cambiar clave</p>
+                </div>
+            </div>
+        </div>  
+        <div class="flex flex-col items-center" style="width: 70vw;">
+            <div class="flex justify-around">
+                <label class="nav-text px-3 flex flex-col" >Nombre* <input class="faded input" type="text" value="Bettina" style="width: 240px; padding-left: 0; padding-top: 0.5rem;"></label>
+                <label class="nav-text px-3 flex flex-col" >Apellido* <input class="faded input" type="text" value="Olmedo" style="width: 240px; padding-left: 0; padding-top: 0.5rem;"></label>
+                <label class="nav-text px-3 flex flex-col" >Cedula* <input class="faded input" type="text" value="5789486" style="width: 240px; padding-left: 0; padding-top: 0.5rem;"></label>
+            </div>
+            <div class="flex justify-around pt-20">
+                <label class="nav-text px-3 flex flex-col" >E-mail* <input class="faded input" type="text" value="bettsolmedo@ejemplo.com" style="width: 380px; padding-left: 0; padding-top: 0.5rem;"></label>
+                <label class="nav-text px-3 flex flex-col" >Celular* <input class="faded input" type="text" value="+1 023492" style="width: 380px; padding-left: 0; padding-top: 0.5rem;"></label>
+
+            </div>
+        </div>  
+    </div>
+</body>
